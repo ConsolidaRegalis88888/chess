@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.board{
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell img{
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+.cell{
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black{
+  background-color: deepskyblue;
+}
+.white{
+  background-color: #eed4ac;
+}
+
+.selected{
+  background-color: brown;
+}
+
+.available{
+  height: 12px;
+  width: 12px;
+  border-radius: 50% ;
+  background-color: green;
+}
+
+.lost {
+  height: calc(50vh - 60px);
+  padding: 30px;
+  margin-left: 50px;
+}
+
+.timer{
+  padding: 30px;
+  margin-right: 50px;
+}
+
+.currentPlayer{
+
+  text-align: center;
+  margin: 20px;
+}
